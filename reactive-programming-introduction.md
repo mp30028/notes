@@ -43,9 +43,36 @@ Mono and Flux are implementations of the Publisher Interface.
 
 ### Subscribing to a producer
 
-![image](https://user-images.githubusercontent.com/78896340/159404685-23b716cd-9fc2-4f3a-bf63-ae036d60fed4.png)
+![image](https://user-images.githubusercontent.com/78896340/159457538-ba984622-79c7-4b8e-8c68-485d6716a776.png)
 
 
+```
+  // Example_01.java
+  package com.zonesoft.examples.reactive_service.tryouts.flux;
+
+  import org.junit.jupiter.api.Test;
+  import org.slf4j.Logger;
+  import org.slf4j.LoggerFactory;
+
+  import reactor.core.Disposable;
+  import reactor.core.publisher.Flux;
+
+  class Example_01 {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Example_01.class);
+
+    @Test
+    void runExample01() throws InterruptedException {
+      System.out.println("-- Flux#empty example --");
+      serveEmpty();
+      Thread.sleep(10000);
+    }
+
+    private Disposable serveEmpty() {
+      return Flux.empty().subscribe(i -> LOGGER.debug("Received : {}", i));
+    }
+
+  }
+```
 
 ### Web Resources
 1. [Introduction](http://www.vinsguru.com/reactive-programming-a-simple-introduction/)
