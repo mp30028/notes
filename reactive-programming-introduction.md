@@ -162,7 +162,7 @@ class Example_03 {
 ```
 	// Example_04.java
 	
-	package com.zonesoft.examples.reactive_service.tryouts.flux;
+package com.zonesoft.examples.reactive_service.tryouts.flux;
 
 import org.junit.jupiter.api.Test;
 import org.reactivestreams.Subscriber;
