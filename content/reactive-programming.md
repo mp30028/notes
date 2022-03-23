@@ -53,7 +53,7 @@ Mono and Flux are implementations of the Publisher Interface.
 ### Subscribing to a producer
 
 
-<img src="../diagrams/flux-object-description.png" style="width:800px">
+<img src="https://user-images.githubusercontent.com/78896340/159694302-bd4264fb-3304-4764-919b-c3bb08ab4169.png" style="width:800px">
 
 ```
   // Example_01.java
