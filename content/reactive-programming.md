@@ -76,7 +76,7 @@ Mono and Flux are implementations of the Publisher Interface.
 
     @Test
     void runExample01() throws InterruptedException {
-      System.out.println("-- Flux#empty example --");
+      LOGGER.debug("-- Flux#empty example --");
       serveEmpty();
       Thread.sleep(10000);
     }
@@ -91,7 +91,7 @@ Mono and Flux are implementations of the Publisher Interface.
 
 
 
-<img src="https://user-images.githubusercontent.com/78896340/159751947-03893b0d-e7e4-4475-ad9f-9c3049701230.png" style="width:600px">
+<img src="https://user-images.githubusercontent.com/78896340/159751947-03893b0d-e7e4-4475-ad9f-9c3049701230.png" style="width:800px">
 
 
 ---
@@ -135,8 +135,17 @@ Mono and Flux are implementations of the Publisher Interface.
   }
 
 ```
+.
+<img src="https://user-images.githubusercontent.com/78896340/159761501-7c73547e-e20a-4590-b539-ce63a4111826.png" style="width: 800px">
+
+. 
+<img src="https://user-images.githubusercontent.com/78896340/159763937-102e5866-afac-4f9d-9774-53d501b0cdc8.png" style="width: 800px">
+ 
+. 
+<img src="https://user-images.githubusercontent.com/78896340/159767236-79a00b74-0f2b-467b-9b59-12c67d8ce5d1.png" style="width: 800px">
 
 
+---
 
 
 ```java
