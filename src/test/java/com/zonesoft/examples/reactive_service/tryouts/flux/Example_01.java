@@ -12,7 +12,7 @@ class Example_01 {
 	
 	@Test
 	void runExample01() throws InterruptedException {
-		System.out.println("-- Flux#empty example --");
+		LOGGER.debug("-- Flux#empty example --");
 		serveEmpty();
 		Thread.sleep(10000);
 	}
@@ -22,3 +22,5 @@ class Example_01 {
 	}
 
 }
+
+

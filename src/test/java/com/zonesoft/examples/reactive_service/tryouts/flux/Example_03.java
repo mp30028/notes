@@ -16,11 +16,7 @@ class Example_03 {
 	
 	@Test
 	void runExample03() throws InterruptedException {
-		
 		personsProducer().subscribe(Example_03::handler);
-		
-		//Block execution to prevent program exiting and see the 
-		//asynchronous results of the previous step
 		Thread.sleep(10000);
 	}
 	

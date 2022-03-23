@@ -13,12 +13,8 @@ class Example_02 {
 	private static final Logger LOGGER = LoggerFactory.getLogger(Example_02.class);
 	
 	@Test
-	void runExample02() throws InterruptedException {
-		
+	void runExample02() throws InterruptedException {		
 		personsProducer().subscribe(Example_02::handler);
-		
-		//Block execution to prevent program exiting and see the 
-		//asynchronous results of the previous step
 		Thread.sleep(10000);
 	}
 	
@@ -27,7 +23,13 @@ class Example_02 {
 	}
 
 	private Flux<Person> personsProducer(){
-		return Flux.just(generatePerson(), generatePerson(), generatePerson(), generatePerson());
+		return Flux.just(
+							generatePerson(), 
+							generatePerson(), 
+							generatePerson(), 
+							generatePerson()
+						);
 	}
 
 }
+

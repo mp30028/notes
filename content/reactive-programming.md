@@ -53,9 +53,11 @@ Mono and Flux are implementations of the Publisher Interface.
 ### Subscribing to a producer
 
 
-<img src="https://user-images.githubusercontent.com/78896340/159694302-bd4264fb-3304-4764-919b-c3bb08ab4169.png" style="width:800px">
+<img src="https://user-images.githubusercontent.com/78896340/159746546-5ee370bc-694c-43df-948e-7bda41f9e30f.png" style="width:800px">
 
-```
+
+
+```java
   // Example_01.java
   // Will not output anything from the stream as only empty objects 
   // are being streamed
@@ -74,7 +76,7 @@ Mono and Flux are implementations of the Publisher Interface.
 
     @Test
     void runExample01() throws InterruptedException {
-      System.out.println("-- Flux#empty example --");
+      LOGGER.debug("-- Flux#empty example --");
       serveEmpty();
       Thread.sleep(10000);
     }
@@ -86,7 +88,16 @@ Mono and Flux are implementations of the Publisher Interface.
   }
 ```
 
-```
+
+
+
+<img src="https://user-images.githubusercontent.com/78896340/159751947-03893b0d-e7e4-4475-ad9f-9c3049701230.png" style="width:800px">
+
+
+---
+
+
+```java
  // Example_02.java
  
   package com.zonesoft.examples.reactive_service.tryouts.flux;
@@ -124,8 +135,20 @@ Mono and Flux are implementations of the Publisher Interface.
   }
 
 ```
+.
+<img src="https://user-images.githubusercontent.com/78896340/159761501-7c73547e-e20a-4590-b539-ce63a4111826.png" style="width: 800px">
 
-```
+. 
+<img src="https://user-images.githubusercontent.com/78896340/159763937-102e5866-afac-4f9d-9774-53d501b0cdc8.png" style="width: 800px">
+ 
+. 
+<img src="https://user-images.githubusercontent.com/78896340/159767236-79a00b74-0f2b-467b-9b59-12c67d8ce5d1.png" style="width: 800px">
+
+
+---
+
+
+```java
   // Example_03.java
   package com.zonesoft.examples.reactive_service.tryouts.flux;
 
