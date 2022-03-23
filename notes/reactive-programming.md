@@ -1,11 +1,13 @@
+[Back to Contents](../README.md)
+
 ## Introductory notes on reactive programming in Java
 
 ### General Concepts
 #### Overview
-![image](https://user-images.githubusercontent.com/78896340/159191166-05454347-045b-47c1-b406-186c1b185dd6.png)
+<img src="https://user-images.githubusercontent.com/78896340/159191166-05454347-045b-47c1-b406-186c1b185dd6.png" style="width:800px">
 
 #### Operators
-![image](https://user-images.githubusercontent.com/78896340/159191513-fe7dd519-9a63-487d-93ce-c5a391afd546.png)
+<img src="https://user-images.githubusercontent.com/78896340/159191513-fe7dd519-9a63-487d-93ce-c5a391afd546.png" style="width:1000px">
 
 
 
@@ -17,7 +19,7 @@
 
 #### Subscriber Interface
 Four Methods for reacting to situations (Events) as and when they occur
-![image](https://user-images.githubusercontent.com/78896340/159192011-9947c6af-7e84-4f92-aced-6cea4b2bfe2c.png)
+<img src="https://user-images.githubusercontent.com/78896340/159192011-9947c6af-7e84-4f92-aced-6cea4b2bfe2c.png" style="width:1000px">
 
 
 #### Publisher Types:
@@ -43,7 +45,7 @@ Mono and Flux are implementations of the Publisher Interface.
 
 ### Subscribing to a producer
 
-![image](https://user-images.githubusercontent.com/78896340/159457538-ba984622-79c7-4b8e-8c68-485d6716a776.png)
+<img src="https://user-images.githubusercontent.com/78896340/159457538-ba984622-79c7-4b8e-8c68-485d6716a776.png" style="width:800px">
 
 
 ```
@@ -245,3 +247,6 @@ class Example_04 {
 3. [Reactor Hot Publisher vs Cold Publisher](https://www.vinsguru.com/reactor-hot-publisher-vs-cold-publisher/)
 4. [Flux Create vs Flux Generate](https://vinsguru.medium.com/java-reactive-programming-flux-create-vs-flux-generate-38a23eb8c053)
 5. [Combining Multiple Sources Of Flux / Mono](https://www.vinsguru.com/reactive-programming-reactor-combining-multiple-sources-of-flux-mono/)
+
+
+[Back to Contents](../README.md)
