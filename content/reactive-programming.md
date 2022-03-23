@@ -141,8 +141,7 @@ Mono and Flux are implementations of the Publisher Interface.
 . 
 <img src="https://user-images.githubusercontent.com/78896340/159763937-102e5866-afac-4f9d-9774-53d501b0cdc8.png" style="width: 800px">
  
-. 
-<img src="https://user-images.githubusercontent.com/78896340/159767236-79a00b74-0f2b-467b-9b59-12c67d8ce5d1.png" style="width: 800px">
+
 
 
 ---
@@ -192,6 +191,9 @@ class Example_03 {
 }
 
 ```
+
+. 
+<img src="https://user-images.githubusercontent.com/78896340/159767236-79a00b74-0f2b-467b-9b59-12c67d8ce5d1.png" style="width: 800px">
 
 ```
 	// Example_04.java
