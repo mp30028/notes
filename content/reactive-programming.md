@@ -6,16 +6,23 @@
 #### Overview
 <img src="https://user-images.githubusercontent.com/78896340/159191166-05454347-045b-47c1-b406-186c1b185dd6.png" style="width:800px">
 
+- A **Publisher**, only when a **Subscriber** subscribes, will stream data to the **Subscriber**. 
+- When a **Subscriber** subscribes a **Subscription** is created
+- In Java Spring WebFlux Framework (which is built on top of Project Reactor) **Publisher, Subscriber, Subscription and Operator** are all Interfaces.
+- **Flux** and **Mono** are two implementations of the Publisher Interface
+
 #### Operators
 <img src="https://user-images.githubusercontent.com/78896340/159191513-fe7dd519-9a63-487d-93ce-c5a391afd546.png" style="width:1000px">
 
+- An **Operator** transforms a data stream and creates new data stream of the transformed data
+- An **Operator** has both the **Publisher** and  **Subscriber** Interfaces.
 
 
 #### Four Key Interfaces
 1. **Publisher** (read-only)
 2. **Subscriber** (write-only)
 3. **Subscription**
-4. **Operartor** (act as both subscriber and publisher)
+4. **Operator** (act as both subscriber and publisher)
 
 #### Subscriber Interface
 Four Methods for reacting to situations (Events) as and when they occur
@@ -245,10 +252,11 @@ class Example_04 {
 
 ### Web Resources
 1. [Introduction](http://www.vinsguru.com/reactive-programming-a-simple-introduction/)
-2. [Creating Streams — Flux vs Mono](https://www.vinsguru.com/mono-vs-flux-project-reactor/)
+2. [Creating Streams - Flux vs Mono](https://www.vinsguru.com/mono-vs-flux-project-reactor/)
 3. [Reactor Hot Publisher vs Cold Publisher](https://www.vinsguru.com/reactor-hot-publisher-vs-cold-publisher/)
 4. [Flux Create vs Flux Generate](https://vinsguru.medium.com/java-reactive-programming-flux-create-vs-flux-generate-38a23eb8c053)
 5. [Combining Multiple Sources Of Flux / Mono](https://www.vinsguru.com/reactive-programming-reactor-combining-multiple-sources-of-flux-mono/)
-
+6. [reactor javadocs](https://projectreactor.io/docs/core/release/api/overview-summary.html)
+7. [Reactor 3 Reference Guide](https://projectreactor.io/docs/core/release/reference/)
 
 [Back to Contents Page](../README.md)
