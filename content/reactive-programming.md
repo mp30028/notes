@@ -57,7 +57,7 @@ Mono and Flux are implementations of the Publisher Interface.
 
 
 
-```
+```java
   // Example_01.java
   // Will not output anything from the stream as only empty objects 
   // are being streamed
@@ -88,7 +88,16 @@ Mono and Flux are implementations of the Publisher Interface.
   }
 ```
 
-```
+
+
+
+<img src="https://user-images.githubusercontent.com/78896340/159751947-03893b0d-e7e4-4475-ad9f-9c3049701230.png" style="width:600px">
+
+
+---
+
+
+```java
  // Example_02.java
  
   package com.zonesoft.examples.reactive_service.tryouts.flux;
@@ -127,7 +136,10 @@ Mono and Flux are implementations of the Publisher Interface.
 
 ```
 
-```
+
+
+
+```java
   // Example_03.java
   package com.zonesoft.examples.reactive_service.tryouts.flux;
 
