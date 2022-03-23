@@ -45,11 +45,13 @@ Mono and Flux are implementations of the Publisher Interface.
 
 ### Subscribing to a producer
 
-<img src="https://user-images.githubusercontent.com/78896340/159457538-ba984622-79c7-4b8e-8c68-485d6716a776.png" style="width:800px">
 
+<img src="../diagrams/flux-object-description.png" style="width:800px">
 
 ```
   // Example_01.java
+  // Will not output anything from the stream as only empty objects 
+  // are being streamed
   
   package com.zonesoft.examples.reactive_service.tryouts.flux;
 
