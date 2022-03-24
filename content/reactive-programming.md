@@ -280,7 +280,13 @@ class Example_04 {
 ```
 
 
-<img src="https://user-images.githubusercontent.com/78896340/159853811-d5a23fc5-50ec-4dd4-ac08-aa9b3231bd02.png" style="width: 1400px">
+<img src="https://user-images.githubusercontent.com/78896340/159865029-ccf32a76-9917-4a0f-a299-9e391aa99e5d.png" style="width: 800px">
+.
+
+<img src="https://user-images.githubusercontent.com/78896340/159865093-f25b8817-df81-43b5-9196-c22d45aac857.png" style="width: 1200px">
+.
+
+<img src="https://user-images.githubusercontent.com/78896340/159864441-12c1e21e-1ef3-4797-b1ca-9448af9103f5.png" style="width: 800px">
 
 
 ### Web Resources
