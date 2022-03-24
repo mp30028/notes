@@ -193,7 +193,11 @@ class Example_03 {
 ```
 
 . 
-<img src="https://user-images.githubusercontent.com/78896340/159767236-79a00b74-0f2b-467b-9b59-12c67d8ce5d1.png" style="width: 800px">
+<img src="https://user-images.githubusercontent.com/78896340/159847778-6f281199-3f70-47d7-9b92-1251f7bb5827.png" style="width: 800px">
+
+
+---
+
 
 ```
 	// Example_04.java
@@ -274,6 +278,10 @@ class Example_04 {
 }
 
 ```
+
+
+<img src="https://user-images.githubusercontent.com/78896340/159853811-d5a23fc5-50ec-4dd4-ac08-aa9b3231bd02.png" style="width: 1400px">
+
 
 ### Web Resources
 1. [Introduction](http://www.vinsguru.com/reactive-programming-a-simple-introduction/)
