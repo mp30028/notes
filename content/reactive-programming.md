@@ -199,7 +199,7 @@ class Example_03 {
 ---
 
 
-```
+```java
 	// Example_04.java
 	
 package com.zonesoft.examples.reactive_service.tryouts.flux;
