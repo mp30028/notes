@@ -22,11 +22,7 @@ class Example_04 {
 	
 	@Test
 	void runExample04() throws InterruptedException {
-
 		personsProducer().subscribe(new PersonSubscriber());
-		
-		//Block execution to prevent program exiting in order to see the 
-		//asynchronous results of the previous step
 		Thread.sleep(10000);
 	}
 
@@ -72,3 +68,5 @@ class Example_04 {
 		}	
 	}
 }
+
+
