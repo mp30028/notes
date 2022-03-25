@@ -6,7 +6,7 @@ Any interface that has a single unimplemented method can be called a functional 
 ### Uses of a functional interface.
 Because there is only one unimplemented method whenever an implementation of the interface is required it can be supplied by a Lambda expression. This is possible because the lambda expression can be mapped to the unimplemented method as there will only be a single candidate available.
 
-In Example_01 the `class Handler` implements the interface `IHandler`. But `IHandler` has exactly one unimplemented method. Therefore `IHandler` is a functional interface.
+In Example_01 the class `Handler` implements the interface `IHandler`. But `IHandler` has exactly one unimplemented method. Therefore `IHandler` is a functional interface.
 
 ```java
 package com.zonesoft.examples.reactive_service.tryouts.functional_interface;
