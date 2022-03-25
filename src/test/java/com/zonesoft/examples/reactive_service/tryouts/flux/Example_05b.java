@@ -12,17 +12,18 @@ import static com.zonesoft.examples.reactive_service.services.generator.PersonGe
 import java.util.ArrayList;
 import java.util.List;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.SynchronousSink;
 
-class Example_05 {
-	private static final Logger LOGGER = LoggerFactory.getLogger(Example_05.class);
+class Example_05b {
+	private static final Logger LOGGER = LoggerFactory.getLogger(Example_05b.class);
 	private static final int REQUEST_SIZE = 3;
 	private List<Person> persons = new ArrayList<>();
 	
 
 	@Test
-	void runExample05() throws InterruptedException {
+	void runExample05b() throws InterruptedException {
 		Flux<Person> flux = Flux.generate(
-				(synchronousSink) -> {
+				(SynchronousSink<Person> synchronousSink) -> {
 					Person person = generatePerson();
 					// Stop generating if firstname starts with S or alphabetically after S 
 					if(person.getFirstname().charAt(0) >= 'S') { 
@@ -37,8 +38,7 @@ class Example_05 {
 		flux.subscribe(new PersonSubscriber());
 		Thread.sleep(10000);
 	}
-	
-	
+		
 	private class PersonSubscriber implements Subscriber<Person>{
 	
 		private Subscription subscription;
