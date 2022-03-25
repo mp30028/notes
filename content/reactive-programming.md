@@ -280,6 +280,7 @@ class Example_04 {
 ```
 
 
+
 <img src="https://user-images.githubusercontent.com/78896340/159865029-ccf32a76-9917-4a0f-a299-9e391aa99e5d.png" style="width: 800px">
 .
 
@@ -287,6 +288,17 @@ class Example_04 {
 .
 
 <img src="https://user-images.githubusercontent.com/78896340/159864441-12c1e21e-1ef3-4797-b1ca-9448af9103f5.png" style="width: 800px">
+
+### Creating stream sequences programmatically.
+
+---
+In the preceding examples the sequences generated are all from a fixed list. In reality sequences would be very dynamic and generated programmatically. There are several ways to do this but of these the **Flux.create** and **Flux.generate** are the most important
+.
+
+<img src="https://user-images.githubusercontent.com/78896340/160075173-26d77732-e408-4592-b222-c55e1dfe0aaf.png" style="width: 800px">
+
+#### Flux.generate
+
 
 
 ### Web Resources
