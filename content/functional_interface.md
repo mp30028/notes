@@ -1,4 +1,4 @@
-[Back to Contents Page](./content.md)
+[Back to Contents Page](./contents.md)
 
 ## Functional Interfaces
 Any interface that has a single unimplemented method can be called a functional interface. It can contain default and static methods which have an implementation. However there must only be one unimplemented method.
@@ -91,4 +91,4 @@ class Example_02 {
 ### Web Resources
 1. [Introduction & Tutorial](http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html)
 
-[Back to Contents Page](./content.md)
+[Back to Contents Page](./contents.md)
