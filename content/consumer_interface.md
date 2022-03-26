@@ -1,7 +1,7 @@
 [Back to Contents Page](../README.md)
 
 ## Consumer Interfaces
-Consumer are typically used to perform an operation on an objects passed in as input but without returning anything. 
+Consumer Interfaces are typically used to perform an operation on an objects passed in as input but without returning anything. 
 
 In Example_01 the `refresh()` function takes an existing Person object and updates it by changing it's attributes. How and which attributes are changed by the `refresh()` function depends on the implementation of the consumer interface passed for the parameter `Consumer<Person> refresher`. The example has two implementations to illustrate the concept.
 
