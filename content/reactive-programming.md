@@ -1,4 +1,4 @@
-[Back to Contents Page](./content.md)
+[Back to Contents Page](./contents.md)
 
 ## Introductory notes on reactive programming in Java
 
@@ -371,4 +371,4 @@ class Example_05a {
 6. [reactor javadocs](https://projectreactor.io/docs/core/release/api/overview-summary.html)
 7. [Reactor 3 Reference Guide](https://projectreactor.io/docs/core/release/reference/)
 
-[Back to Contents Page](./content.md)
+[Back to Contents Page](./contents.md)
