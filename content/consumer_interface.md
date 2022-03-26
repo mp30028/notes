@@ -1,4 +1,4 @@
-[Back to Contents Page](../README.md)
+[Back to Contents Page](./content.md)
 
 ## Consumer Interfaces
 Consumer Interfaces are typically used to perform an operation on an object passed in as input but without returning anything. 
@@ -141,4 +141,4 @@ class Example_02 {
 1. [Introductory Tutorial](https://www.geeksforgeeks.org/java-8-consumer-interface-in-java-with-examples/)
 2. [More extensive Tutorial](https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-with-examples/) that covers `andThen()`
 
-[Back to Contents Page](../README.md)
+[Back to Contents Page](./content.md)
