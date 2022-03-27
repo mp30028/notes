@@ -1,5 +1,4 @@
-## Content
 
-1. [Reactive Programming in Java](./docs/reactive-programming.md)
-2. [Functional Interfaces](./docs/functional_interface.md)
-3. [Consumer Interfaces](./docs/consumer_interface.md)
+This is a repository of notes and examples mainly for myself. 
+
+All the Examples are in the path src/test/java and should be run as junit-tests and the notes should be accessible at [here](https://mp30028.github.io/notes/contents)
