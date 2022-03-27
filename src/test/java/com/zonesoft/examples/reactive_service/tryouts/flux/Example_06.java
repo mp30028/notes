@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.zonesoft.examples.reactive_service.entities.Person;
+
 import static com.zonesoft.examples.reactive_service.services.generator.PersonGenerator.generatePerson;
 
 import java.util.ArrayList;
@@ -33,8 +34,23 @@ class Example_06 {
 					return (++j); 				//increment then return
 				}
 			);
+		this.wait(5, "Before-subscribe");
 		flux.subscribe(new PersonSubscriber());
-		Thread.sleep(10000);
+		this.wait(10, "Before-run-ends");	
+	}
+	
+	private void wait(int seconds, String tag) {
+		LOGGER.debug("Started wait. {}", tag);
+			for (int j=0; j < seconds; j++) {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					LOGGER.error("Error whilst waiting: {}", e.getLocalizedMessage());
+					e.printStackTrace();
+				}
+				LOGGER.debug(":");
+			}
+		LOGGER.debug("Finished wait. {}", tag);
 	}
 	
 	private class PersonSubscriber implements Subscriber<Person>{
