@@ -300,6 +300,14 @@ In the preceding examples the sequences generated are all from a fixed list. In 
 #### Flux.generate
 
 
+<img src="https://user-images.githubusercontent.com/78896340/160268250-d993b0cb-9ed7-4241-8fd1-da75d82f6d86.png" style="width: 1000px">
+
+
+##### Example_05a
+
+<img src="https://user-images.githubusercontent.com/78896340/160269493-c1b3b8eb-4814-4955-800a-4a43424613ec.png" style="width: 800px">
+
+
 ```java
 
 package com.zonesoft.examples.reactive_service.tryouts.flux;
@@ -357,6 +365,123 @@ class Example_05a {
 	}
 }
 
+```
+
+##### Example_05b
+This example is the same as the previous one except the `Consumer` Interface is passed in as a Lambda expression to the `generate` function.
+
+```java
+
+package com.zonesoft.examples.reactive_service.tryouts.flux;
+
+import org.junit.jupiter.api.Test;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.zonesoft.examples.reactive_service.entities.Person;
+import static com.zonesoft.examples.reactive_service.services.generator.PersonGenerator.generatePerson;
+
+import java.util.ArrayList;
+import java.util.List;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.SynchronousSink;
+
+class Example_05b {
+	private static final Logger LOGGER = LoggerFactory.getLogger(Example_05b.class);
+	private static final int REQUEST_SIZE = 3;
+	private List<Person> persons = new ArrayList<>();
+	
+
+	@Test
+	void runExample05b() throws InterruptedException {
+		Flux<Person> flux = Flux.generate(
+				(SynchronousSink<Person> synchronousSink) -> {
+					Person person = generatePerson();
+					char initial = person.getFirstname().charAt(0);
+					// Stop generating if firstname starts with S or alphabetically after S 
+					if(initial >= 'S') { 
+						LOGGER.debug("Finishing off. Person's firstname starts with {}. person=[ {} ]",initial, person);
+						synchronousSink.complete();
+					}else {
+						LOGGER.debug("Continuing with person ={}", person);
+						synchronousSink.next(person);
+					}
+				}
+			);
+		this.wait(5, "Before-subscribe");
+		flux.subscribe(new PersonSubscriber());
+		this.wait(10, "Before-run-ends");
+	}
+	
+	private void wait(int seconds, String tag) {
+		/* ----   Details not shown here  ---*/
+	}
+	
+	private class PersonSubscriber implements Subscriber<Person>{
+		/* ----   Details not shown here  ---*/	
+	}
+
+```
+
+#### Example_06
+
+This example uses generate with state
+
+<img src="https://user-images.githubusercontent.com/78896340/160269939-48e5feea-e70e-4b54-89ff-94d2c65ce5f1.png" style="width: 500px">
+
+
+```java
+
+package com.zonesoft.examples.reactive_service.tryouts.flux;
+
+import org.junit.jupiter.api.Test;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.zonesoft.examples.reactive_service.entities.Person;
+
+import static com.zonesoft.examples.reactive_service.services.generator.PersonGenerator.generatePerson;
+
+import java.util.ArrayList;
+import java.util.List;
+import reactor.core.publisher.Flux;
+
+class Example_06 {
+	private static final Logger LOGGER = LoggerFactory.getLogger(Example_06.class);
+	private static final int NO_OF_PERSONS = 11;
+	private static final int REQUEST_SIZE = 3;
+
+	
+	@Test
+	void runExample06() throws InterruptedException {
+		Flux<Person> flux = Flux.generate(
+				() -> 0, 						//initialise int j
+				(j, synchronousSink) -> {
+					LOGGER.debug("j={} ", j);
+					if (j >= NO_OF_PERSONS) {
+						synchronousSink.complete();
+					} else {
+						synchronousSink.next(generatePerson());
+					}
+					return (++j); 				//increment then return
+				}
+			);
+		this.wait(5, "Before-subscribe");
+		flux.subscribe(new PersonSubscriber());
+		this.wait(10, "Before-run-ends");	
+	}
+	
+	private void wait(int seconds, String tag) {
+		/* ----   Details not shown here  ---*/
+	}
+	
+	private class PersonSubscriber implements Subscriber<Person>{
+		/* ----   Details not shown here  ---*/	
+	}
 
 
 ```

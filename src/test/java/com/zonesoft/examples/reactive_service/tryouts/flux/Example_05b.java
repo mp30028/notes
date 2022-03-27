@@ -25,9 +25,10 @@ class Example_05b {
 		Flux<Person> flux = Flux.generate(
 				(SynchronousSink<Person> synchronousSink) -> {
 					Person person = generatePerson();
+					char initial = person.getFirstname().charAt(0);
 					// Stop generating if firstname starts with S or alphabetically after S 
-					if(person.getFirstname().charAt(0) >= 'S') { 
-						LOGGER.debug("Finishing off with person ={}", person);
+					if(initial >= 'S') { 
+						LOGGER.debug("Finishing off. Person's firstname starts with {}. person=[ {} ]",initial, person);
 						synchronousSink.complete();
 					}else {
 						LOGGER.debug("Continuing with person ={}", person);
@@ -35,10 +36,26 @@ class Example_05b {
 					}
 				}
 			);
+		this.wait(5, "Before-subscribe");
 		flux.subscribe(new PersonSubscriber());
-		Thread.sleep(10000);
+		this.wait(10, "Before-run-ends");
 	}
-		
+	
+	private void wait(int seconds, String tag) {
+		LOGGER.debug("Started wait. {}", tag);
+			for (int j=0; j < seconds; j++) {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					LOGGER.error("Error whilst waiting: {}", e.getLocalizedMessage());
+					e.printStackTrace();
+				}
+				LOGGER.debug(":");
+			}
+		LOGGER.debug("Finished wait. {}", tag);
+	}
+	
+	
 	private class PersonSubscriber implements Subscriber<Person>{
 	
 		private Subscription subscription;
