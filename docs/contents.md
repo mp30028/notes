@@ -2,3 +2,4 @@
 2. [Functional Interfaces](./functional_interface.md)
 3. [Consumer Interfaces](./consumer_interface.md)
 4. [Mongo Notes](./mongo.md)
+5. [Issues and Remedies](./issues-remedies.md)
