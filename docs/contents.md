@@ -3,3 +3,4 @@
 3. [Consumer Interfaces](./consumer_interface.md)
 4. [Symboilic Links](./symlinks.md)
 5. [Profiles in Spring Boot](./profiles_in_spring_boot.md)
+6. [Searching on GitHub](https://docs.github.com/en/search-github/searching-on-github/searching-code)
