@@ -5,3 +5,5 @@
 5. [Profiles in Spring Boot](./profiles_in_spring_boot.md)
 6. [Searching on GitHub](https://docs.github.com/en/search-github/searching-on-github/searching-code)
 7. [Find and Kill process using a given port](./find-port-use.md)
+8. [Mongo Notes](./mongo.md)
+9. [Issues and Remedies](./issues-remedies.md)
