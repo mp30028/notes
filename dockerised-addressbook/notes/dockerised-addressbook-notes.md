@@ -1,11 +1,11 @@
 
-##### Login to Docker-Hub
+## To login to Docker-Hub
 
 `docker login -u mebsp`
 
 ![screenshot](./images/docker-login.png)
 
-##### Building a test Dockerfile with nginx
+## Building a test Dockerfile with nginx
 
 ***Create the Dockerfile***
 ```dockerfile
@@ -33,7 +33,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ![screenshot](./images/invoke-webrequest.png)
 
 
-##### Building a Dockerfile starting with a MySql official image
+## Building a Dockerfile starting with a MySql official image
 
  ***Clean up previous addrbook containers and images***
 `docker stop addrbook`
