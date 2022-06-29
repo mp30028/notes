@@ -1,12 +1,6 @@
-
-## Login to Docker-Hub
-
 `docker login -u mebsp`
 
 ![screenshot](./images/docker-login.png)
-
-
----
 
 ## Building a test Dockerfile with nginx
 
