@@ -5,7 +5,4 @@ LABEL maintainer="zonesoft" \
 ENV MYSQL_ROOT_PASSWORD root*P^55word
 ENV MYSQL_DATABASE addressbook
 ADD create_adressbook_db.sql /docker-entrypoint-initdb.d
-RUN ls -l > ls.txt
-RUN echo "---------------" >> ls.txt
-RUN pwd >> ls.txt
 EXPOSE 3306
