@@ -1,6 +1,11 @@
+
+## Login to Docker-Hub
+
 `docker login -u mebsp`
 
 ![screenshot](./images/docker-login.png)
+
+---
 
 ## Building a test Dockerfile with nginx
 
@@ -68,7 +73,7 @@ At the mysqlsh prompt ![screenshot](./images/mysqlsh-prompt.png ) switch to sql 
 
 ![screenshot](./images/connect-mysqlsh.png)
 
-## Building an image with a default database created and seeded with some database
+## Building an image with a default database created and seeded with some data
 
 ***1. Update the Dockerfile created in the previous exercise***
 
