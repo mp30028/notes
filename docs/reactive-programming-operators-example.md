@@ -69,7 +69,7 @@ public class Examples {
 	}
 	
 	@Test
-	void runExample65() throws InterruptedException {
+	void runExample6() throws InterruptedException {
 		LOGGER.debug("\n\nRunning Example 06. Using the <as> operator to transform a Flux into a Mono but with a more complex example");
 		Function<String, WordDigitPair> transformToPair = ((s) -> new WordDigitPair(s));
 		Function<Flux<String>, Mono<List<WordDigitPair>>> transformToMono = ((f) -> f.map(transformToPair).collectList()) ;
