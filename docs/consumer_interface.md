@@ -1,5 +1,3 @@
-[Back to Contents Page](./contents.md)
-
 ## Consumer Interfaces
 Consumer Interfaces are typically used to perform an operation on an object passed in as input but without returning anything. 
 
