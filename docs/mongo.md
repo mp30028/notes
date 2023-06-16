@@ -16,5 +16,3 @@
 ### Web Resources
 1. [Cheat sheet](https://gist.github.com/michaeltreat/d3bdc989b54cff969df86484e091fd0c)
 
-
-[Back to Contents Page](./contents.md)
