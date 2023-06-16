@@ -1,5 +1,3 @@
-[Back to Contents Page](./contents.md)
-
 ## Mongo Related Notes
 
 #### Interacting with Mongo
