@@ -1,7 +1,3 @@
-[Back to Contents Page](./contents.md)
-
-
-
 #### java.lang.reflect.InaccessibleObjectException
 Running junit5-tests throws the following exception.
 ![javaw_cJwledAI5F](https://user-images.githubusercontent.com/78896340/160387841-eab3f927-213a-44ff-b4d2-4e167c4187ac.png)
