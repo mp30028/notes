@@ -89,4 +89,3 @@ class Example_02 {
 ### Web Resources
 1. [Introduction & Tutorial](http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html)
 
-[Back to Contents Page](./contents.md)

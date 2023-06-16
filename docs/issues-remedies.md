@@ -9,6 +9,3 @@ Fixed this by putting `--add-opens java.base/java.lang=ALL-UNNAMED` in run confi
 ![javaw_rEZpgunmCE](https://user-images.githubusercontent.com/78896340/160388462-975a5f5b-4285-4441-8431-0c1964cb5e21.png)
 
 
-
-
-[Back to Contents Page](./contents.md)
