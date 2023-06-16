@@ -1,5 +1,3 @@
-[Back to Contents Page](./contents.md)
-
 ## Functional Interfaces
 Any interface that has a single unimplemented method can be called a functional interface. It can contain default and static methods which have an implementation. However there must only be one unimplemented method.
 
