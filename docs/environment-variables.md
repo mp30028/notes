@@ -21,7 +21,7 @@ To unset or remove, pass an empty string<br/>
 
 ## On Linux
 
-### To list values currently actuve
+### To list values currently active env vars
 `printenv` <br/>
 `printenv | grep SOPS` - To find env variables starting with SOPS
 
