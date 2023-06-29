@@ -30,5 +30,5 @@ To unset or remove, pass an empty string<br/>
 
 ### To make profile changes for all users
 Add a file with `*.sh` extension to the `/etc/profile.d/` folder e.g. `/etc/profile.d/my_env_var.sh` <br/>
-In the file with the `*.sh` extension add an export statement e.g. `export THE_ENV_VAR=the_value_of_the_env_var
+In the file with the `*.sh` extension add an export statement e.g. `export THE_ENV_VAR=the_value_of_the_env_var`
 
