@@ -33,5 +33,5 @@ Add a file with `*.sh` extension to the `/etc/profile.d/` folder e.g. `/etc/prof
 In the file with the `*.sh` extension add an export statement e.g. `export THE_ENV_VAR=the_value_of_the_env_var`
 
 ### To find where and how env variable are being set
-`sudo grep  -r the_name_to_search ~/*`
-`sudo grep  -r the_name_to_search /etc/*`
+`sudo grep  -r the_name_to_search ~/*` <br/>
+`sudo grep  -r the_name_to_search /etc/*`<br/>
