@@ -106,3 +106,12 @@ SHELL=/bin/sh
 SKEL=/etc/skel
 CREATE_MAIL_SPOOL=no
 ```
+
+---
+
+## Create Groups in Linux (groupadd Command)
+
+### General Syntax
+`groupadd [OPTIONS] GROUPNAME` creates a new group based on command line options or defaults in `/etc/login.defs` file.
+
+`groupadd mygroup` adds an entry in `/etc/group` and `/etc/gshadow` files.
